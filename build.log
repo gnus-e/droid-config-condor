@@ -1,0 +1,518 @@
+
+NOTICE: No tags describe the HEAD, will not fix package version.
+Building target platforms: armv7hl-meego-linux
+Building for target armv7hl-meego-linux
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.kPZR2u
++ umask 022
++ cd /home/abhijeet/hadk/hybris/droid-configs
++ '[' /home/abhijeet/hadk/hybris/droid-configs/installroot '!=' / ']'
++ rm -rf /home/abhijeet/hadk/hybris/droid-configs/installroot
+++ dirname /home/abhijeet/hadk/hybris/droid-configs/installroot
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs
++ mkdir /home/abhijeet/hadk/hybris/droid-configs/installroot
++ LANG=C
++ export LANG
++ unset DISPLAY
++ rm -rf /home/abhijeet/hadk/hybris/droid-configs/installroot
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs/installroot
++ rm -rf tmp/
++ mkdir -p tmp/
++ echo '%defattr(-,root,root,-)'
++ copy_files_from ./droid-configs-device/sparse
++ config_dir=./droid-configs-device/sparse
++ '[' -d ./droid-configs-device/sparse ']'
++ cd ./droid-configs-device/sparse
++ sed 's/^.//'
++ find . '(' -type f -or -type l ')' -print
++ cp -Rf ./droid-configs-device/sparse/etc ./droid-configs-device/sparse/lib ./droid-configs-device/sparse/usr ./droid-configs-device/sparse/var /home/abhijeet/hadk/hybris/droid-configs/installroot/
++ delete_files tmp/droid-config.files delete_file.list 1
++ files=tmp/droid-config.files
++ deletelist=delete_file.list
++ dorm=1
++ '[' -e delete_file.list ']'
++ copy_files_from ./sparse
++ config_dir=./sparse
++ '[' -d ./sparse ']'
++ cd ./sparse
++ find . '(' -type f -or -type l ')' -print
++ sed 's/^.//'
++ cp -Rf ./sparse/var /home/abhijeet/hadk/hybris/droid-configs/installroot/
++ delete_files tmp/droid-config.files delete_file_condor.list 1
++ files=tmp/droid-config.files
++ deletelist=delete_file_condor.list
++ dorm=1
++ '[' -e delete_file_condor.list ']'
++ config_files tmp/droid-config.files rpm-config-files.files
++ files=tmp/droid-config.files
++ configlist=rpm-config-files.files
++ '[' -e rpm-config-files.files ']'
++ OFONONOPLUGIN=/home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ OFONO_MODEM_DEFAULT_PLUGINS=ril,rildev,rilmodem,sms_history,push_forwarder,push_notification,smart_messaging,mnclength,provision,nettime,connman,atmodem
++ echo ril,rildev,rilmodem,sms_history,push_forwarder,push_notification,smart_messaging,mnclength,provision,nettime,connman,atmodem
++ sed 's/,/\n/g'
++ read line
++ sed -i '/,ril\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,rildev\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,rilmodem\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,sms_history\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,push_forwarder\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,push_notification\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,smart_messaging\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,mnclength\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,provision\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,nettime\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,connman\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ sed -i '/,atmodem\\/d' /home/abhijeet/hadk/hybris/droid-configs/installroot/var/lib/environment/ofono/noplugin.conf
++ read line
++ '[' -e packaged-in-main-spec.files ']'
++ grep bluez4 tmp/droid-config.files
++ sed --in-place /bluez4/d tmp/droid-config.files
++ grep bluez5 tmp/droid-config.files
++ sed --in-place /bluez5/d tmp/droid-config.files
++ echo '%defattr(-,root,root,-)'
++ grep ohm tmp/droid-config.files
++ sed --in-place /ohm/d tmp/droid-config.files
++ echo '%defattr(-,root,root,-)'
++ grep pulse tmp/droid-config.files
++ sed --in-place /pulse/d tmp/droid-config.files
++ sed --in-place /preinit/d tmp/droid-config.files
++ grep /dconf/db/ tmp/droid-config.files
++ sed --in-place '/\/dconf\/db\//d' tmp/droid-config.files
++ grep -e flash-partition -e platform-updates tmp/droid-config.files
++ sed --in-place -e /flash-partition/d -e /platform-updates/d tmp/droid-config.files
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups/
++ /usr/bin/repomd-pattern-builder.py --patternxml -p ./droid-configs-device/patterns/common -o /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups/ --version=1 --release=1
+Working on /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups//sailfish-porter-tools.xml
++ /usr/bin/repomd-pattern-builder.py --patternxml -p ./patterns/ -o /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups/ --version=1 --release=1
+Working on /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups//jolla-configuration-condor.xml
+Working on /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups//jolla-hw-adaptation-condor.xml
++ sed --in-place 's|@PIXEL_RATIO@|1.0|' /home/abhijeet/hadk/hybris/droid-configs/installroot/etc/dconf/db/vendor.d/silica-configs.txt
++ sed --in-place 's|@START_DRAG_DISTANCE@|20|' /home/abhijeet/hadk/hybris/droid-configs/installroot/etc/xdg/QtProject/QPlatformTheme.conf
++ sed --in-place 's|@ICON_RES@|1.0|' /home/abhijeet/hadk/hybris/droid-configs/installroot/etc/dconf/db/vendor.d/silica-configs.txt
++ sed --in-place 's|@ICON_RES@|1.0|' /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups/jolla-configuration-condor.xml /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups/jolla-hw-adaptation-condor.xml /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/share/package-groups/sailfish-porter-tools.xml
++ sed --in-place /systemCheck.d/d tmp/droid-config.files
++ rm -f /home/abhijeet/hadk/hybris/droid-configs/installroot/etc/zypp/systemCheck.d/ha.check
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/board-mappings.d
++ sed -e 's|%DEVICE%|condor|g' -e 's|%VENDOR%|motorola|g' -e 's|%OTHERDEVICE%|%{otherdevice}|g' -e 's|%DEVICE_PRETTY%|Moto E|g' -e 's|%VENDOR_PRETTY%|Motorola|g' -e 's|%ARCH%|armv7hl|g' droid-configs-device/ssu/board-mappings.d/05-sfe.ini.in
++ sed --in-place /adaptation-repos=/d /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/board-mappings.d/05-motorola-condor.ini
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/features.d/
++ sed -e 's|@DEVICE@|condor|g' -e 's|@VENDOR@|motorola|g' /usr/share/community-adaptation/adaptation-community.ini.in
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/kickstart/pack/condor
++ DEST_UPDATER=/home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/kickstart/pack/condor/hybris
++ sed -e 's|@DEVICE@|condor|g' ./droid-configs-device/kickstart/pack_package-droid-updater
++ '[' -f ./kickstart/pack_package-droid-updater ']'
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/kickstart/attachment
++ cp -f ./droid-configs-device/kickstart/attachment_hybris /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/kickstart/attachment/condor
++ cp -f ./kickstart/attachment_hybris /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/kickstart/attachment/condor
+cp: cannot stat `./kickstart/attachment_hybris': No such file or directory
++ true
++ '[' -e ./kickstart ']'
++ echo 'Setting domain to sales'
+Setting domain to sales
++ KS_LEVELS=false
++ mkdir -p /tmp/sandbox//usr/share
++ '[' -d /usr/share/ssu ']'
++ cp -Rf /usr/share/ssu /tmp/sandbox//usr/share/
++ rm -f /tmp/sandbox//usr/share/ssu/board-mappings.ini
++ cp -R /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu /tmp/sandbox//usr/share/
++ rm -f /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/ssu/board-mappings.ini
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/kickstarts
++ sleep 1
++ '[' -z false ']'
++ for M in condor
++ for B in '$KS_LEVELS'
++ ssuks domain=sales model=condor sandbox=/tmp/sandbox outputdir=/home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/kickstarts/ rnd=false version=1
+Using sandbox at /tmp/sandbox
+Writing kickstart to /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/kickstarts//Jolla-@RELEASE@-condor-@ARCH@.ks
++ ln -s /bin/false /home/abhijeet/hadk/hybris/droid-configs/installroot/usr/lib/startup/preinit/is_total_erase_supported
++ mkdir -p /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/qt5/keymaps
++ /usr/lib/qt5/bin/kmap2qmap ./droid-configs-device/configs/droid.kmap ./droid-configs-device/configs/us.kmap /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/qt5/keymaps/droid.qmap
+library "libGLESv2.so" not found
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
++ /usr/lib/qt5/bin/kmap2qmap ./configs/droid.kmap ./configs/us.kmap /home/abhijeet/hadk/hybris/droid-configs/installroot//usr/share/qt5/keymaps/droid.qmap
+library "libGLESv2.so" not found
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+dlsym failed: library handle is null
+Could not read from './configs/droid.kmap'.
++ true
++ cd /home/abhijeet/hadk/hybris/droid-configs/installroot
++ clean_files
++ sed 's_^./_/_'
++ ls ./usr/share/kickstarts/Jolla-@RELEASE@-condor-@ARCH@.ks
++ clean_files
++ sed 's_^./_/_'
++ cd /home/abhijeet/hadk/hybris/droid-configs/installroot
++ find ./usr/share/ssu/kickstart/ -type f
++ cd /home/abhijeet/hadk/hybris/droid-configs/installroot
++ clean_files
++ find ./usr/share/ssu/kickstart/ -type l
++ sed 's_^./_/_'
++ '[' -e extra-files.files ']'
++ '[' -e create.dirs ']'
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/meego/brp-compress
++ /usr/lib/rpm/meego/brp-strip /usr/bin/strip
++ /usr/lib/rpm/meego/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/meego/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python
++ /usr/lib/rpm/meego/brp-python-hardlink
++ /usr/lib/rpm/meego/find-docs.sh /home/abhijeet/hadk/hybris/droid-configs/installroot
++ /usr/lib/rpm/meego/brp-java-repack-jars
+Processing files: droid-config-condor-1-1.armv7hl
+Provides: bluetooth-rfkill-event-configs droid-config obexd-configs
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires: /bin/sh /usr/bin/env
+Conflicts: usb-moded-pc-suite-mode-android usb-moded-mtp-mode-android-ffs
+Obsoletes: usb-moded-pc-suite-mode-android usb-moded-mtp-mode-android-ffs
+Processing files: droid-config-condor-ssu-kickstarts-1-1.armv7hl
+Provides: droid-config-ssu-kickstarts image-configurations
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: droid-config-condor-patterns-1-1.armv7hl
+Provides: droid-config-patterns package-groups
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: droid-config-condor-policy-settings-1-1.armv7hl
+Provides: droid-config-policy-settings ohm-configs > 1.1.15 policy-settings
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Obsoletes: ohm-config <= 1.1.15 ohm-configs-default
+Processing files: droid-config-condor-kickstart-configuration-1-1.armv7hl
+Provides: droid-config-kickstart-configuration droid-hal-kickstart-configuration
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: droid-config-condor-preinit-plugin-1-1.armv7hl
+Provides: droid-config-preinit-plugins
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/sh
+Processing files: droid-config-condor-pulseaudio-settings-1-1.armv7hl
+Provides: droid-config-pulseaudio-settings pulseaudio-settings
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: droid-config-condor-sailfish-1-1.noarch
+Provides: droid-config-sailfish theme-configs
+Requires(interp): /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Processing files: droid-config-condor-flashing-1-1.armv7hl
+Provides: droid-config-flashing
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/sh
+Processing files: droid-config-condor-bluez4-1-1.armv7hl
+Provides: bluez-configs condor-bluez-configs
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Conflicts: droid-config-condor-bluez5 bluez5 bluez5-libs bluez5-obexd kf5bluezqt-bluez5 bluez5-configs
+Obsoletes: bluez-configs-sailfish bluez-configs-mer
+Processing files: droid-config-condor-bluez5-1-1.armv7hl
+Provides: bluez5-configs condor-bluez-configs
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Conflicts: droid-config-condor-bluez4 bluez bluez-libs obexd kf5bluezqt-bluez4 bluez-configs
+Obsoletes: bluez-configs-sailfish
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/abhijeet/hadk/hybris/droid-configs/installroot
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-ssu-kickstarts-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-patterns-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-policy-settings-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-kickstart-configuration-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-preinit-plugin-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-pulseaudio-settings-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-sailfish-1-1.noarch.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-flashing-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-bluez4-1-1.armv7hl.rpm
+Wrote: /home/abhijeet/hadk/hybris/droid-configs/RPMS/droid-config-condor-bluez5-1-1.armv7hl.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.1m3iOx
++ umask 022
++ cd /home/abhijeet/hadk/hybris/droid-configs
++ /bin/rm -rf /home/abhijeet/hadk/hybris/droid-configs/installroot
++ exit 0
